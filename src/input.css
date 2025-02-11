@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+svg,
+svg path,
+.sidebar,
+body,
+h1,
+h2,
+p {
+    transition: all 0.3s;
+}
+
+svg.mode-switcher {
+    cursor: pointer;
+    stroke: white;
+}
+
+svg.mode-switcher.activated {
+    stroke: black;
+    transform: translateX(-50%) rotate(90deg);
+}
+
+svg.dark path {
+    fill: black;
+}
+
+.scroll-button,
+.scroll-icon {
+    cursor: pointer;
+}
+
+.wow {
+    visibility: hidden;
+}
+
+.splide {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.splide__track {
+    padding: 2rem;
+    overflow: visible !important;
+}
+
+.splide__slide {
+    background: linear-gradient(#e66465, #9198e5);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 6px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    position: relative;
+    opacity: 1;
+}
+
+.splide__slide.dark {
+    background: linear-gradient(black, orange);
+}
+
+/* Active slide is fully visible */
+.splide__slide.is-active {
+    transform: translateX(0) scale(1);
+    z-index: 3;
+}
+
+/* Next slide */
+.splide__slide.is-next {
+    transform: translateY(-20px) scale(0.95);
+    z-index: 2;
+    opacity: 0.8;
+}
+
+/* Previous and other slides */
+.splide__slide:not(.is-active):not(.is-next) {
+    transform: translateY(-40px) scale(0.9);
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.splide__pagination li button {
+    background-color: #8643de;
+}
+
+.splide__pagination li button.is-active {
+    background-color: #510bac;
+}
+
+.splide__pagination li button.dark {
+    background-color: rgb(250, 161, 17);
+}
+
+.splide__pagination li button.dark.is-active {
+    background-color: orange;
+}
