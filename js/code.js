@@ -80,6 +80,13 @@ window.addEventListener('DOMContentLoaded', () => {
         waitForTransition: true,
         updateOnMove: true,
         fixedHeight: '100%',
+        breakpoints: {
+            1024: {
+                fixedHeight: 'fit-content',
+                pagination: false,
+                padding: '1rem',
+            }
+        },
     });
 
     // Add custom classes for stacking effect

@@ -101,3 +101,22 @@ svg.dark path {
     }
 
 }
+
+@media (max-width: 1024px) { 
+    svg.mode-switcher.activated {
+        transform: translateY(-50%) rotate(90deg);
+    }
+
+    .splide {
+        max-width: none;
+        margin: 0.1rem auto;
+    }
+    
+    .splide__track {
+        padding: 0 1rem;
+    }
+    
+    .splide__slide {
+        padding: 1rem;
+    }
+}
