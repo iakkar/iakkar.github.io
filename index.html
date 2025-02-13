@@ -14,8 +14,8 @@
 </head>
 
 <body class="min-h-screen relative [&_a]:text-[#8643de] [&_h1]:text-[#8643de] [&_span.scroll-button]:text-[#8643de] [&_a]:font-semibold">
-    <div class="sidebar z-[100] w-16 h-screen fixed top-0 left-0 bg-[#8643de] flex flex-col gap-[20px] items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" fill="none" class="mode-switcher absolute top-2 left-1/2 translate-x-[-50%]">
+    <div class="sidebar z-50 desktop:w-16 desktop:h-screen mobile:h-16 mobile:w-full fixed top-0 left-0 bg-[#8643de] flex desktop:flex-col mobile:flex-row gap-[20px] items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" fill="none" class="mode-switcher absolute desktop:top-2 desktop:left-1/2 mobile:left-2 mobile:top-1/2 desktop:translate-x-[-50%] desktop:translate-y-[0] mobile:translate-y-[-50%]">
             <path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
         <a class="inline-block w-[25px]" target="_blank" href="https://github.com/iakkar">
@@ -29,25 +29,25 @@
             </svg>
         </a>
     </div>
-    <div class="introduction flex items-center pl-20 pr-5 h-screen overflow-hidden">
-        <div class="img-wrapper relative aspect-square w-[500px] h-[500px] mx-[75px]">
-            <div class="wow slideInRight w-full h-full absolute top-0 left-[25px] bg-gradient-to-r from-[#8643de70] to-[#d0abff70] rounded-[50%_50%_50%_50%]" data-wow-delay="0.3s"></div>
-            <img src="../assets/images/kareglis.jpg" alt="Iakovos Kareglis" class="wow slideInRight z-[2] absolute top-0 left-0 object-cover aspect-square w-[500px] rounded-[50%]" data-wow-delay="0s">
+    <div class="introduction flex items-center justify-center laptop:flex-row mobile:flex-col desktop:pl-20 desktop:pr-5 desktop:pt-0 laptop:px-5 mobile:px-3 mobile:pt-16 h-screen overflow-hidden">
+        <div class="img-wrapper relative aspect-square flex-[1_1_500px] mx-[75px] my-5">
+            <div class="wow slideInRight w-full h-full absolute top-0 laptop:left-[25px] tablet:left-[20px] mobile:left-[10px] bg-gradient-to-r from-[#8643de70] to-[#d0abff70] rounded-[50%]" data-wow-delay="0.3s"></div>
+            <img src="./assets/images/kareglis.jpg" alt="Iakovos Kareglis" class="wow slideInRight z-[2] absolute top-0 left-0 object-cover aspect-square max-w-[99%] rounded-[50%]" data-wow-delay="0s">
         </div>
-        <div class="personal-info">
-            <h2 class="wow slideInRight text-2xl font-normal" data-wow-delay="0.5s">Whazzzzzuuuuupppppp... I'm</h2>
-            <h1 class="wow slideInRight text-5xl font-semibold" data-wow-delay="0.6s">IAKOVOS KAREGLIS</h1>
+        <div class="personal-info laptop:flex-[1_2_1160px] mobile:flex-[1_5_1160px] mobile:text-center laptop:text-left">
+            <h2 class="wow slideInRight tablet:text-2xl mobile:text-xl font-normal" data-wow-delay="0.5s">Whazzzzzuuuuupppppp... I'm</h2>
+            <h1 class="wow slideInRight tablet:text-5xl mobile:text-4xl font-semibold" data-wow-delay="0.6s">IAKOVOS KAREGLIS</h1>
             <p class="wow slideInRight" data-wow-delay="0.7s">An undergraduate student at the <a href="https://www.ds.unipi.gr/" target="_blank">Digital Sytems</a> department of the <a href="https://www.unipi.gr/">University of Piraeus</a>. 
                 Currently I work as a Website Developer at <a href="https://www.onlynet.gr/el" target="_blank">OnlyNet</a> where my main duties are to deliver and maintain large scale websites using the CMS Drupal working from backend to frontend.
             </p>
-            <div class="section-intro wow slideInRight pt-5 flex items-end" data-wow-delay="0.5s">
-                <div class="basis-2/3">
-                    <h3 class="text-xl font-normal">
+            <div class="section-intro wow slideInRight pt-5 flex items-end laptop:flex-row mobile:flex-col" data-wow-delay="0.5s">
+                <div class="basis-2/3 max-w-xl mx-auto">
+                    <h3 class="tablet:text-xl mobile:text-base font-normal">
                         I'd really appreciate it if you took the time to check the projects I am most proud of.
-                        <span class="scroll-button text-sm inline-block pl-2 font-semibold">Scroll below...</span>
+                        <span class="scroll-button text-sm laptop:inline-block mobile:block pl-2 font-semibold">Scroll below...</span>
                     </h3>
                 </div>
-                <div class="basis-1/3 wow bounce" data-wow-delay="3s">
+                <div class="basis-1/3 wow bounce mobile:mx-auto" data-wow-delay="3s">
                     <svg class="scroll-icon" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24">
                         <path d="M12 20L18 14M12 20L6 14M12 20L12 9.5M12 4V6.5" stroke="#8643de" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
@@ -61,7 +61,7 @@
                 <div class="splide__list">
                     <div class="splide__slide">
                         <div class="slide-content flex flex-col gap-7">
-                            <img class="w-full rounded-lg" src="../assets/images/DS-Estate/image.png" alt="DS Estate">
+                            <img class="w-full rounded-lg" src="./assets/images/DS-Estate/image.png" alt="DS Estate">
                             <h2 class="text-center text-2xl font-semibold">DS Estate - A Real Real Estate Agency</h2>
                             <p class="slide-text font-500 text-base w-full min-h-28 bg-[rgba(0,0,0,0.2)] rounded-2xl p-2 [&_span]:font-semibold">
                                 <span>DS Estate</span> is a real estate website i built for the Web Development Class in my University.
@@ -78,7 +78,7 @@
                     <div class="splide__slide">
                         <div class="slide-content">
                             <div class="slide-content flex flex-col gap-7">
-                                <img class="w-full rounded-lg" src="../assets/images/Check-Weather/image.png" alt="Check Weather">
+                                <img class="w-full rounded-lg" src="./assets/images/Check-Weather/image.png" alt="Check Weather">
                                 <h2 class="text-center text-2xl font-semibold">Check Weather Website</h2>
                                 <p class="slide-text font-500 text-base w-full min-h-28 bg-[rgba(0,0,0,0.2)] rounded-2xl p-2 [&_span]:font-semibold">
                                     <span>Check Weather</span> is a simple website to check the weather on any city in the world. It features a <span>Search functionality</span>, 
@@ -97,7 +97,7 @@
                     <div class="splide__slide">
                         <div class="slide-content">
                             <div class="slide-content flex flex-col gap-7">
-                            <img class="w-full rounded-lg" src="../assets/images/Flags-Game/image.png" alt="Flags Game">
+                            <img class="w-full rounded-lg" src="./assets/images/Flags-Game/image.png" alt="Flags Game">
                             <h2 class="text-center text-2xl font-semibold">Flags Game - Guess the neighbouring countries</h2>
                             <p class="slide-text font-500 text-base w-full min-h-28 bg-[rgba(0,0,0,0.2)] rounded-2xl p-2 [&_span]:font-semibold">
                                 In the <span>Flags Game</span> the user has to find every neighbour of the displayed country. At the start of each round the
@@ -116,7 +116,7 @@
                     <div class="splide__slide">
                         <div class="slide-content">
                             <div class="slide-content flex flex-col gap-7">
-                            <img class="w-full rounded-lg" src="../assets/images/Reaction-Tester/image.png" alt="Reaction Tester">
+                            <img class="w-full rounded-lg" src="./assets/images/Reaction-Tester/image.png" alt="Reaction Tester">
                             <h2 class="text-center text-2xl font-semibold">Reaction Tester - Test Your Reactions</h2>
                             <p class="slide-text font-500 text-base w-full min-h-28 bg-[rgba(0,0,0,0.2)] rounded-2xl p-2 [&_span]:font-semibold">
                                 <span>Reaction Tester</span> is a simple game that mainly tests the user's reaction times, by calculating the time it takes to <span>click</span> on the
@@ -134,7 +134,7 @@
                     <div class="splide__slide">
                         <div class="slide-content">
                             <div class="slide-content flex flex-col gap-7">
-                            <img class="w-full rounded-lg" src="../assets/images/Guess-The-Fingers/image.png" alt="Guess The Fingers">
+                            <img class="w-full rounded-lg" src="./assets/images/Guess-The-Fingers/image.png" alt="Guess The Fingers">
                             <h2 class="text-center text-2xl font-semibold">Guess the fingers</h2>
                             <p class="slide-text font-500 text-base w-full min-h-28 bg-[rgba(0,0,0,0.2)] rounded-2xl p-2 [&_span]:font-semibold">
                                 <span>Guess the fingers</span> is a simple game that has the user guess how many fingers are being held up. The code chooses a <span>random number

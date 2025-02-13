@@ -94,3 +94,10 @@ svg.dark path {
 .splide__pagination li button.dark.is-active {
     background-color: orange;
 }
+
+@media (max-width: 1280px) { 
+    svg.mode-switcher.activated {
+        transform: translateY(-50%) rotate(90deg);
+    }
+
+}
