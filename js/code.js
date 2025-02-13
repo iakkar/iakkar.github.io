@@ -1,4 +1,21 @@
+function scrollChromeTopBar() {
+    if (window.visualViewport) {
+        const viewportHeight = window.visualViewport.height;
+        const innerHeight = window.innerHeight;
+
+        // Calculate the height of the top bar
+        const chromeTopBarHeight = innerHeight - viewportHeight;
+
+        if (chromeTopBarHeight > 0) {
+            window.scrollBy(0, chromeTopBarHeight);
+        }
+    }
+}
+
 window.addEventListener('DOMContentLoaded', () => {
+    
+    setTimeout(scrollChromeTopBar, 100);
+
     document.querySelectorAll(".mode-switcher").forEach((svg) => {
         svg.addEventListener("click", (event) => {
             svg.classList.toggle('activated');
@@ -105,4 +122,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     splide.mount();
+
+
 });
