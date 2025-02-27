@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Βρες τους γείτονες</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="countries.js" defer async></script>
+</head>
+
+<body>
+    <div class="game-panel">
+        <div id="sidebar">
+            <div>
+                <h4>Βρείτε τους γείτονες</h4>
+                <span>Γύρος: <span id="round-info">1</span></span>
+                <span>Σκορ: <span id="score-info">0</span></span>
+                <span>Μέγιστο: <span id="high-score"></span></span>
+
+            </div>
+            <div>
+                <button id="next-country" disabled>Επόμενη χώρα</button>
+                <button id="new-game">Νέο παιχνίδι</button>
+            </div>
+        </div>
+        <div id="my-country">
+            <div id="country-flag-field"></div>
+            <h3 id="country-name-field"></h3>
+            <div id="message-field"></div>
+        </div>
+        <div id="score"></div>
+        <div id="neighbours-panel"></div>
+
+    </div>
+</body>
+<script>
+//macOS Users.
+if (navigator.appVersion.indexOf("Macintosh")>0){
+  document.body.style.fontFamily = '"Open Sans"';
+}
+</script>
+</html>

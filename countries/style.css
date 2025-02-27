@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'TwemojiMozilla';
+    src: url('TwemojiMozilla.ttf');
+}
+
+body {
+    margin: 40px;
+    font-family: 'Open Sans', 'TwemojiMozilla';
+    background-color: beige;
+    color: #444;
+}
+
+.game-panel {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid: 60px 20px 330px / 110px auto auto auto;
+    gap: 5px;
+    padding: 5px;
+}
+
+#my-country {
+    background-color: rgb(111, 128, 143);
+    grid-column: 2/5;
+    padding: 7px;
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    #country-flag-field {
+        font-size: 40px;
+        margin-right: 15px;
+    }
+
+    #message-field {
+        margin-left: auto;
+    }
+
+}
+
+#sidebar {
+    background-color: rgb(255, 20, 146);
+    grid-row: 1/4;
+    padding: 7px;
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4 {
+            margin-top: 0;
+            padding: 0;
+        }
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+        padding: 5px;
+        font-size: 13px;
+        border: transparent;
+        border-radius: 2px;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+    
+    button[disabled] {
+        cursor: auto;
+    }
+
+}
+
+#sidebar > div > span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#score {
+    background-color: rgb(230, 230, 230);
+    grid-column: 2/5;
+    display: flex;
+    border: transparent;
+    border-radius: 5px;
+    
+    div {
+        transition: background 0.3s ease;
+    }
+
+    div:first-of-type {
+        border-radius: 5px 0 0 5px;
+        transition: background 0.3s ease;
+    }
+
+    div:last-of-type {
+        border-radius: 0 5px 5px 0;
+        transition: background 0.3s ease;
+    }
+}
+
+#neighbours-panel {
+    background-color: white;
+    grid-column: 2/5;
+    grid-row: 3/4;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3px;
+    gap: 10px;
+    border: 2px solid green;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+.neighbour {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    min-height: 140px;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.neighbour-flag {
+    font-size: 40px;
+}
+
+#progress {
+    border-radius: 5px;
+}
+
+#progress::-webkit-progress-bar {
+    border-radius: 5px;
+}

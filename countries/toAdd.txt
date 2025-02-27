@@ -1,0 +1,8 @@
+1. Feedback on each country's neighbours -- Completed
+2. Next country button disbaled hover cursor change -- Completed
+3. High score using localStorage -- Completed
+
+4. Maybe add only positive score
+5. Add different scores based on the number of possible neighbours (The more neighbors the more points)
+
+6. Bug: target country might appear as a possible beighbour (America).
