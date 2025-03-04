@@ -4,7 +4,6 @@
 }
 
 body {
-    margin: 40px;
     font-family: 'Open Sans', 'TwemojiMozilla';
     background-color: beige;
     color: #444;
@@ -12,11 +11,12 @@ body {
 
 .game-panel {
     max-width: 1500px;
+    height: 90vh;
     margin: 0 auto;
     display: grid;
-    grid: 60px 20px 330px / 110px auto auto auto;
+    grid: 1.5fr 0.5fr 8fr / 1.5fr 8.5fr;
     gap: 5px;
-    padding: 5px;
+    padding: 10px;
 }
 
 #my-country {
@@ -28,6 +28,7 @@ body {
     border-radius: 5px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
 
     #country-flag-field {

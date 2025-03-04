@@ -29,6 +29,7 @@ svg.dark path {
 .scroll-button,
 .scroll-icon {
     cursor: pointer;
+    fill: black
 }
 
 .wow {

@@ -50,7 +50,7 @@ window.addEventListener('DOMContentLoaded', () => {
             });
 
             document.querySelectorAll(".scroll-icon path").forEach((arrow) => {
-                arrow.classList.toggle("stroke-[rgb(255_165_0)]");
+                arrow.classList.toggle("stroke-black");
             });
 
             document.querySelectorAll(".splide button").forEach((button) => {
@@ -65,10 +65,17 @@ window.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll(".scroll-button, .scroll-icon").forEach((btn) => {
         btn.addEventListener("click", () => {
-            window.scrollTo({
-                top: window.innerHeight,
-                behavior: "smooth"
-            });
+            if(btn.classList.contains('up')) {
+                window.scrollTo({
+                    top:  document.body.scrollTop - window.innerHeight,
+                    behavior: "smooth"
+                });
+            } else {
+                window.scrollTo({
+                    top: document.body.scrollTop + window.innerHeight,
+                    behavior: "smooth"
+                });
+            }
         });
     });
 
